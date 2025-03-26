@@ -12,11 +12,13 @@ const ShopCard = ({ card }) => {
       </div>
       <div className="footer">
         <div className="price">${price}</div>
-        <button type="button" className="btn">ADD TO CART</button>
+        <button type="button" className="btn">
+          ADD TO CART
+        </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
 function CardsView({ cards }) {
   return (
@@ -25,7 +27,7 @@ function CardsView({ cards }) {
         <ShopCard key={index} card={card} />
       ))}
     </div>
-  )
+  );
 }
 
-export default CardsView
+export default CardsView;

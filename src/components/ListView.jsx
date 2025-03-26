@@ -1,5 +1,5 @@
 const ShopItem = ({ item }) => {
-  const { name, price, color, img } = item
+  const { name, price, color, img } = item;
 
   return (
     <div className="item">
@@ -9,10 +9,12 @@ const ShopItem = ({ item }) => {
       <h2>{name}</h2>
       <div className="color">{color}</div>
       <div className="price">${price}</div>
-      <button type="button" className="btn">ADD TO CART</button>
+      <button type="button" className="btn">
+        ADD TO CART
+      </button>
     </div>
-  )
-}
+  );
+};
 
 function ListView({ items }) {
   return (
@@ -21,7 +23,7 @@ function ListView({ items }) {
         <ShopItem key={index} item={item} />
       ))}
     </div>
-  )
+  );
 }
 
-export default ListView
+export default ListView;
